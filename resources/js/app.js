@@ -1,6 +1,7 @@
 require('./bootstrap');
 // import VueCookies from 'vue3-cookies'
 import { createApp } from 'vue';
+import store from './store';
 
 import App from './App.vue';
 
@@ -50,4 +51,4 @@ router.beforeEach((to, from, next) => {
 //   next();
 });
 
-createApp(App).use(router).mount('#app');
+createApp(App).use(router).use(store).mount('#app');

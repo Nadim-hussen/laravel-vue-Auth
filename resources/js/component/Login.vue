@@ -80,6 +80,7 @@ export default {
             router.push({
              path:'/'
             });
+
           })
           .catch((e) => {
             console.log(e.message);

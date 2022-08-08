@@ -1,6 +1,7 @@
 <template>
-    <div>
+    <div style="width:100vw; text-align:center;">
         <h3>Welcome to Home😍😍😍😍😍😍😍😍</h3>
+        {{points}}
         <button class="btn btn-dark mx-3" @click.prevent="logout">Logout</button>
     </div>
 </template>
@@ -31,5 +32,10 @@ export default {
       logout,
     };
   },
+  computed:{
+   points(){
+      return this.$store.state.count
+   }
+  }
 };
 </script>
